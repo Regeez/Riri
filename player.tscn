@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bnwy0ar3kemu6"]
 
 [ext_resource type="Script" uid="uid://c6ebx2vhxx2do" path="res://player.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://dd701n3gruihu" path="res://icon.svg" id="2_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://cyd7atjyhlo08" path="res://assets/tilesets/tileset.png" id="2_onrkg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
 size = Vector2(128, 128)
@@ -11,7 +11,11 @@ scale = Vector2(0.5, 0.5)
 script = ExtResource("1_onrkg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2099670046]
-texture = ExtResource("2_i3pqv")
+texture = ExtResource("2_onrkg")
+region_enabled = true
+region_rect = Rect2(48, 144, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1932218315]
+position = Vector2(1.1920929e-07, 0)
+scale = Vector2(0.09809224, 0.12777902)
 shape = SubResource("RectangleShape2D_4flbx")
